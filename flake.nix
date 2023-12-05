@@ -46,6 +46,6 @@
       };
     };
     homeManagerModules.gust-cursor-theme = import ./modules/cursor-theme.nix;
-    
+    homeManagerModules.bb-wallpaper = import ./modules/wallpaper.nix;
   };
 }
