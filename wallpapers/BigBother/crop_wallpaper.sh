@@ -15,7 +15,7 @@ for inputFile in "$inputDir"/*.png; do
     
     for orientation in "${!sizes[@]}"; do
         for res in ${sizes[$orientation]}; do
-            outputFile="build/${filename}_${res}.png"
+            outputFile="build/${res}.png"
             convert "$inputFile" -crop "$res"+0+0 "$outputFile"
         done
     done
